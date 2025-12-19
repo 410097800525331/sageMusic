@@ -29,12 +29,12 @@
       <div class="top">
         <input class="search" placeholder="Search" />
         <!-- <div>Welcome, sage</div> -->
-         <div>
+        <div>
           <ul class="user_menu">
-            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign in</a></li>
             <li><a href="#">Join</a></li>
           </ul>
-         </div>
+        </div>
       </div>
       <section class="hero">
         <div class="hero_cover"></div>
@@ -47,57 +47,17 @@
           <div class="track"><span>hot girl bummer</span><span>3:08</span></div>
         </div>
       </section>
-      <!-- By Genre -->
-      <section class="section">
-        <h3>By Genre</h3>
-        <div class="grid">
-          <div class="card">
-            <div class="thumb"></div>
-            <div class="title">Come Over When You're Sober</div>
-            <div class="meta">Lil Peep</div>
-          </div>
-          <div class="card">
-            <div class="thumb"></div>
-            <div class="title">IGOR</div>
-            <div class="meta">Tyler, The Creator</div>
-          </div>
-          <div class="card">
-            <div class="thumb"></div>
-            <div class="title">Princess Bubblegum</div>
-            <div class="meta">JACKBOYS</div>
-          </div>
-          <div class="card">
-            <div class="thumb"></div>
-            <div class="title">cybersex</div>
-            <div class="meta">blackbear</div>
-          </div>
-        </div>
-      </section>
       <!-- Playlist -->
-      <section class="section">
-        <h3>Playlist</h3>
-        <div class="grid">
-          <div class="card">
-            <div class="thumb"></div>
-            <div class="title">Come Over When You're Sober</div>
-            <div class="meta">Lil Peep</div>
-          </div>
-          <div class="card">
-            <div class="thumb"></div>
-            <div class="title">IGOR</div>
-            <div class="meta">Tyler, The Creator</div>
-          </div>
-          <div class="card">
-            <div class="thumb"></div>
-            <div class="title">Princess Bubblegum</div>
-            <div class="meta">JACKBOYS</div>
-          </div>
-          <div class="card">
-            <div class="thumb"></div>
-            <div class="title">cybersex</div>
-            <div class="meta">blackbear</div>
-          </div>
-        </div>
+      <section class="playlist_section">
+        <h2>Your Favorite Playlist</h2>
+        <!-- playlist.js -->
+        <div class="playlist_card_grid"></div>
+      </section>
+      <!-- By Genre -->
+      <section class="byGenre_section">
+        <h2>Playlist By Genre</h2>
+        <!-- By Genre.js -->
+        <div class="byGenre_card_grid"></div>
       </section>
     </main>
     <!-- right_sidebar -->
@@ -105,6 +65,10 @@
       <h1>Music Playing</h1>
     </aside>
   </section>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/playlistcardData.js"></script>
+  <script src="js/playlistcard.js"></script>
 </body>
 
 </html>

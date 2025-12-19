@@ -84,24 +84,22 @@
   border-bottom: 1px solid var(--line);
 }
 /* grid */
-.section h3 {
-  margin: 0 0 14px;
-  font-size: 16px;
-}
-.grid {
+.byGenre_card_grid,
+.playlist_card_grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 18px;
+  margin-top: 10px;
 }
 .card {
   background: var(--panel);
   border-radius: var(--radius-lg);
   padding: 14px;
 }
-.thumb {
+.card img {
   height: 120px;
   border-radius: 12px;
-  background: #e1e1e1;
+  object-fit: contain;
   margin-bottom: 10px;
 }
 .title {
