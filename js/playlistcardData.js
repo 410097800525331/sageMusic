@@ -40,31 +40,31 @@ const playlistDatas = [
 const byGenreDatas = [
   {
     link: "#",
-    album: "/assets/img/sage-albumR&B.png",
+    album: "/assets/img/365225603_e30b77a5-3bcb-4ded-8f93-776add6d8420.jpg",
     title: "R&B",
     txt: "알앤비",
   },
   {
     link: "#",
-    album: "/assets/img/sage-albumR&B.png",
+    album: "/assets/img/378763489_2627e9d1-5fdb-40aa-916d-b9cfd62be027.jpg",
     title: "Hip-Hop",
     txt: "힙합",
   },
   {
     link: "#",
-    album: "/assets/img/sage-albumR&B.png",
+    album: "/assets/img/378763489_2627e9d1-5fdb-40aa-916d-b9cfd62be027.jpg",
     title: "Jazz",
     txt: "재즈",
   },
   {
     link: "#",
-    album: "/assets/img/sage-albumR&B.png",
+    album: "/assets/img/378763489_2627e9d1-5fdb-40aa-916d-b9cfd62be027.jpg",
     title: "Ballad",
     txt: "발라드",
   },
   {
     link: "#",
-    album: "/assets/img/sage-albumR&B.png",
+    album: "/assets/img/378763489_2627e9d1-5fdb-40aa-916d-b9cfd62be027.jpg",
     title: "Japanese Anime",
     txt: "애니",
   },

@@ -11,7 +11,7 @@
 
 <body>
   <section class="layout">
-    <!-- left_sidebar -->
+    <!-- Left Sidebar -->
     <aside class="left_sidebar">
       <div class="logo">
         <img src="assets/img/sage_logo.png" alt="sage logo" />
@@ -24,7 +24,7 @@
         <a href="#">Upgrade</a>
       </nav>
     </aside>
-    <!-- main -->
+    <!-- Main -->
     <main class="main">
       <div class="top">
         <input class="search" placeholder="Search" />
@@ -60,11 +60,47 @@
         <div class="byGenre_card_grid"></div>
       </section>
     </main>
-    <!-- right_sidebar -->
+    <!-- Right Sidebar -->
     <aside class="right_sidebar">
       <h1>Music Playing</h1>
     </aside>
+    <!-- Player Bar -->
+    <div class="player_bar">
+      <button class="player_toggle" aria-label="toggle player"></button>
+      <div class="player_track">
+        <img src="/assets/img/sage_logo.png" alt="album">
+        <h3>곡 제목</h3>
+      </div>
+      <div class="player_controls">
+        <button class="ctrl prev">⏮</button>
+        <button class="ctrl play">▶</button>
+        <button class="ctrl next">⏭</button>
+      </div>
+      <div class="player_progress">
+        <div class="progress_bg">
+          <div class="progress_fill"></div>
+        </div>
+      </div>
+      <div class="player_right">
+        <svg class="volume_icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 9h4l5-4v14l-5-4H4z" />
+        </svg>
+
+        <input type="range" min="0" max="1" step="0.01" value="0.7" class="volume_bar">
+      </div>
+
+      <!-- <audio id="audio" src="music.mp3"></audio> -->
+    </div>
   </section>
+  <script>
+    const playerBar = document.querySelector(".player_bar");
+    const toggleBtn = document.querySelector(".player_toggle");
+
+    toggleBtn.addEventListener("click", () => {
+      playerBar.classList.toggle("hidden");
+    });
+  </script>
+
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/playlistcardData.js"></script>
