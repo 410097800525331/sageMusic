@@ -1,5 +1,6 @@
 @charset 'utf-8';
 
+/* Left Sidebar */
 .left_sidebar {
   width: 220px;
   padding: 24px 18px;
@@ -20,12 +21,6 @@
 .nav,
 .auth_links {
   transition: opacity 0.2s ease;
-}
-.user_menu {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 20px;
 }
 #left_sidebar_toggle {
   padding: 4px 10px 20px;
@@ -60,4 +55,25 @@
 .nav a.active {
   background: var(--d1);
   color: var(--l1);
+}
+
+/* Top */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search {
+  width: 360px;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--l2);
+  background: var(--l2);
+}
+.user_menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
 }
