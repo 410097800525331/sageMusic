@@ -1,37 +1,37 @@
 const playlistDatas = [
   {
     link: "#",
-    album: "/assets/img/sage_logo.png",
+    album: "/assets/img/sage_logo.svg",
     title: "When Playing Games",
     txt: "Playlist",
   },
   {
     link: "#",
-    album: "/assets/img/sage_logo.png",
+    album: "/assets/img/sage_logo.svg",
     title: "Decadent Pop Song",
     txt: "Playlist",
   },
   {
     link: "#",
-    album: "/assets/img/sage_logo.png",
+    album: "/assets/img/sage_logo.svg",
     title: "XXXTENTACION",
     txt: "텐타시온",
   },
   {
     link: "#",
-    album: "/assets/img/sage_logo.png",
+    album: "/assets/img/sage_logo.svg",
     title: "LEESSANG",
     txt: "리쌍",
   },
   {
     link: "#",
-    album: "/assets/img/sage_logo.png",
+    album: "/assets/img/sage_logo.svg",
     title: "Homies",
     txt: "호미들",
   },
   {
     link: "#",
-    album: "/assets/img/sage_logo.png",
+    album: "/assets/img/sage_logo.svg",
     title: "Car the garden",
     txt: "카더가든",
   },
