@@ -52,6 +52,9 @@
   border-radius: var(--radius-lg);
   color: var(--d2);
 }
+.nav a:hover {
+  color: #c90000;
+}
 .nav a.active {
   background: var(--d1);
   color: var(--l1);
