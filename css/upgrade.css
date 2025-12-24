@@ -1,1 +1,99 @@
 @charset 'utf-8';
+
+.upgrade_wrap {
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+.upgrade_wrap p {
+  margin-top: 4px;
+  color: var(--d3);
+}
+/* slider */
+.plan_slider {
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  margin-top: 40px;
+}
+.plan_track {
+  display: flex;
+  gap: 32px;
+  scroll-behavior: smooth;
+}
+.plan_card {
+  flex: 0 0 300px;
+  padding: 24px;
+  background: var(--l1);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  opacity: 0.4;
+  transform: scale(0.85);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.plan_card.active {
+  opacity: 1;
+  transform: scale(1);
+}
+.plan_card:nth-of-type(3) {
+  border: 1px dashed var(--r1);
+}
+.card_description p {
+  margin: 20px 0;
+}
+.card_btn {
+  width: 100%;
+  height: 42px;
+  margin: 20px 0;
+  color: #fff;
+  background: linear-gradient(90deg, var(--d3), var(--d2));
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+}
+.card_features li {
+  display: flex;
+  align-items: center;
+  color: #444;
+  margin-bottom: 10px;
+}
+.card_features span {
+  font-size: 0.9rem;
+  margin-right: 8px;
+}
+.card_features::after {
+  content: '';
+  display: block;
+  height: 1px;
+  background: var(--l5);
+  margin: 20px 0;
+}
+.includes_list p {
+  position: relative;
+  margin: 8px 0;
+  padding-left: 18px;
+}
+.includes_list p::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--d1);
+  font-weight: 600;
+}
+.slider_nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+.slider_nav button {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--d3);
+  background: transparent;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .plan_card {
+    width: 240px;
+  }
+}

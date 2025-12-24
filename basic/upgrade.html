@@ -7,107 +7,7 @@
   <title>sageMusic</title>
   <link rel="ico" href="favicon.svg" />
   <link rel="stylesheet" href="/css/main.css">
-    <style>
-    .upgrade_wrap {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 120px 24px;
-    }
-
-    .upgrade_title {
-      text-align: center;
-      margin-bottom: 64px;
-    }
-
-    .upgrade_title h1 {
-      font-size: 2rem;
-      font-weight: 500;
-      margin-bottom: 12px;
-    }
-
-    .upgrade_title p {
-      font-size: 0.9rem;
-      color: #9a9a9a;
-    }
-
-    .plan_list {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
-    .plan_card {
-      border: 1px solid #2a2a2a;
-      padding: 32px 24px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .plan_card.highlight {
-      border-color: #ffffff;
-    }
-
-    .plan_name {
-      font-size: 1.1rem;
-      margin-bottom: 8px;
-    }
-
-    .plan_price {
-      font-size: 1.5rem;
-      margin-bottom: 24px;
-    }
-
-    .plan_price span {
-      font-size: 0.8rem;
-      color: #9a9a9a;
-    }
-
-    .plan_features {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 32px 0;
-      flex: 1;
-    }
-
-    .plan_features li {
-      font-size: 0.85rem;
-      color: #b5b5b5;
-      margin-bottom: 10px;
-    }
-
-    .plan_btn {
-      height: 44px;
-      border: 1px solid #ffffff;
-      background: transparent;
-      color: #ffffff;
-      font-size: 0.9rem;
-      cursor: pointer;
-    }
-
-    .plan_btn.muted {
-      border-color: #2a2a2a;
-      color: #777;
-      cursor: default;
-    }
-
-    /* tablet */
-    @media (max-width: 1024px) {
-      .plan_list {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    /* mobile */
-    @media (max-width: 768px) {
-      .upgrade_wrap {
-        padding: 80px 16px;
-      }
-
-      .plan_list {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="/css/upgrade.css">
 </head>
 
 <body>
@@ -117,57 +17,18 @@
     <!-- Main -->
     <main class="main">
       <div class="top"></div>
-      
-    <section class="upgrade_wrap">
-    <div class="upgrade_title">
-      <h1>Upgrade</h1>
-      <p>Choose how you listen</p>
-    </div>
-
-    <div class="plan_list">
-
-      <div class="plan_card">
-        <div class="plan_name">Free</div>
-        <div class="plan_price">$0 <span>/ month</span></div>
-
-        <ul class="plan_features">
-          <li>Ads included</li>
-          <li>Standard audio</li>
-          <li>Limited skips</li>
-        </ul>
-
-        <button class="plan_btn muted">Current</button>
-      </div>
-
-      <div class="plan_card highlight">
-        <div class="plan_name">Premium</div>
-        <div class="plan_price">$9.99 <span>/ month</span></div>
-
-        <ul class="plan_features">
-          <li>No ads</li>
-          <li>High quality audio</li>
-          <li>Unlimited skips</li>
-          <li>Background play</li>
-        </ul>
-
-        <button class="plan_btn">Upgrade</button>
-      </div>
-
-      <div class="plan_card">
-        <div class="plan_name">Pro</div>
-        <div class="plan_price">$14.99 <span>/ month</span></div>
-
-        <ul class="plan_features">
-          <li>All Premium features</li>
-          <li>Lossless audio</li>
-          <li>Offline listening</li>
-        </ul>
-
-        <button class="plan_btn">Choose</button>
-      </div>
-
-    </div>
-  </section>
+      <section class="upgrade_wrap">
+        <h1>Upgrade</h1>
+        <p>Choose how you listen.</p>
+        <div class="plan_slider">
+          <!-- plan_card -->
+          <div class="plan_track"></div>
+        </div>
+        <div class="slider_nav">
+          <button id="prevBtn">‹</button>
+          <button id="nextBtn">›</button>
+        </div>
+      </section>
     </main>
     <!-- Right Sidebar -->
     <!-- <div class="right_sidebar">
@@ -175,11 +36,13 @@
     </div> -->
   </section>
   <div class="player_bar"></div>
-  
+
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="/js/sign.js"></script>
   <script src="/js/include.js"></script>
   <script src="/js/playerbar.js"></script>
+  <script src="/js/upgradeData.js"></script>
+  <script src="/js/upgrade.js"></script>
 </body>
 
 </html>
