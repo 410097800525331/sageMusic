@@ -6,8 +6,7 @@
   gap: 24px;
   padding: 24px;
   border-radius: var(--radius-lg);
-  background: var(--d2);
-  color: var(--l2);
+  background: var(--l1);
 }
 .hero_cover {
   width: 220px; height: 220px;
@@ -28,7 +27,7 @@
   justify-content: space-between;
   padding: 8px 0;
   font-size: 14px;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--d3);
 }
 /* card */
 .playlist_card_grid {
@@ -44,7 +43,7 @@
   margin-top: 10px;
 }
 .card {
-  /* background: var(--l3); */
+  background: var(--l1);
   border-radius: var(--radius-lg);
   padding: 14px;
 }

@@ -8,9 +8,13 @@
   align-items: center;
   width: 100%; height: 96px;
   padding: 0 80px;
-  color: var(--l3);
   border-top: 1px solid var(--d2);
+  color: var(--l3);
   background: #101010;
+  transform: translateY(100%)
+}
+.player_bar.is_open {
+  transform: translateY(0);
 }
 .player_bar {
   transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
@@ -88,15 +92,15 @@
   -webkit-appearance: none;
   width: 10px; height: 10px;
   border-radius: 50%;
-  background: var(--d3);
+  background: var(--l4);
 }
 .volume_bar::-moz-range-thumb {
   width: 10px; height: 10px;
   border: none;
   border-radius: 50%;
-  background: var(--d3);
+  background: var(--l4);
 }
 .volume_bar::-moz-range-track {
   height: 2px;
-  background: var(--d3);
+  background: var(--l4);
 }

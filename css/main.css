@@ -1,5 +1,6 @@
 @charset 'utf-8';
 @import url(reset.css);
+@import url(sign.css);
 @import url(include.css);
 @import url(player_bar.css);
 
