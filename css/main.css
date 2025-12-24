@@ -26,7 +26,47 @@
   grid-template-columns: 64px 1fr 300px;
   gap: 20px;
 }
+.home > div {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.home img {
+  width: 400px;
+  object-fit: contain;
+}
+.home {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
 
+.bg_records span {
+  position: absolute;
+  top: 50%;
+  width: 120vw;
+  height: 2px;
+  background: rgba(0,0,0,0.05);
+  animation: slide 20s linear infinite;
+}
+
+.bg_records span:nth-child(2) {
+  top: 40%;
+  animation-direction: reverse;
+}
+.bg_records span:nth-child(3) {
+  top: 60%;
+}
+.bg_records span:nth-child(4) {
+  top: 30%;
+  animation-duration: 30s;
+}
+
+@keyframes slide {
+  from { transform: translateX(-10%); }
+  to   { transform: translateX(-90%); }
+}
 
 /* .right_sidebar {
   margin: 20px;

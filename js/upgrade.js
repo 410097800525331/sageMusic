@@ -11,18 +11,9 @@ $(upgradeDatas).each((idx, data) => {
         </div>
         <button class="card_btn">Get started</button>
         <ul class="card_features">
-          <li>
-            <span>⚡</span>
-            <p>${data.features1}</p>
-          </li>
-          <li>
-            <span>⚡</span>
-            <p>${data.features2}</p>
-          </li>
-          <li>
-            <span>⚡</span>
-            <p>${data.features3}</p>
-          </li>
+          <li><p>${data.features1}</p></li>
+          <li><p>${data.features2}</p></li>
+          <li><p>${data.features3}</p></li>
         </ul>
         <div class="card_includes">
           <p>Free includes:</p>

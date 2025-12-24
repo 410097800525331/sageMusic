@@ -25,7 +25,7 @@
   padding: 24px;
   background: var(--l1);
   border-radius: var(--radius-sm);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   opacity: 0.4;
   transform: scale(0.85);
   transition: 0.3s;
@@ -35,8 +35,8 @@
   opacity: 1;
   transform: scale(1);
 }
-.plan_card:nth-of-type(3) {
-  border: 1px dashed var(--r1);
+.plan_card h1 {
+  font-size: 2.4rem;
 }
 .card_description p {
   margin: 20px 0;
@@ -53,12 +53,14 @@
 .card_features li {
   display: flex;
   align-items: center;
-  color: #444;
-  margin-bottom: 10px;
 }
-.card_features span {
-  font-size: 0.9rem;
-  margin-right: 8px;
+.card_features li::before {
+  content: "";
+  display: inline-block;
+  width: 5px; height: 5px;
+  background: var(--d1);
+  border-radius: 50%;
+  margin: 6px 8px 0 0;
 }
 .card_features::after {
   content: '';
